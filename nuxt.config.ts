@@ -19,11 +19,16 @@ export default defineNuxtConfig({
     },
     plugins: [tailwindcss()],
   },
-  css: ["./src/app/assets/css/main.css"],
+
+  css: ["./src/assets/css/main.css"],
+
   // Avoids error [unhandledRejection] EMFILE: too many open files, watch
   ignore: ["**/src-tauri/**"],
+
   // Enables the development server to be discoverable by other devices when running on iOS physical devices
   devServer: {
     host: "0",
   },
+
+  modules: ["@nuxt/image"],
 });

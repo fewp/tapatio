@@ -1,6 +1,6 @@
 <template>
   <span
-    class="px-4 py-1 rounded-md text-white h-min select-none"
+    class="px-4 py-1 rounded-md text-white h-min select-none outline outline-black/5 -outline-offset-1"
     :class="backgroundClasses[category]"
   >
     {{ name }}

@@ -8,7 +8,7 @@ pub async fn list(pool: &PgPool) -> Result<Vec<Task>, sqlx::Error> {
         r#"
         SELECT
             id,
-            category, 
+            category,
             title,
             progress_current,
             progress_total,
@@ -16,6 +16,7 @@ pub async fn list(pool: &PgPool) -> Result<Vec<Task>, sqlx::Error> {
             reward_amount,
             created_at,
             updated_at,
+            deleted_at,
             completed_at
         FROM tasks
         ORDER BY created_at DESC

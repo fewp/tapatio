@@ -4,16 +4,16 @@ use sqlx::{postgres::PgPoolOptions, PgPool};
 pub mod database;
 pub mod models;
 pub mod repository;
+mod error;
+
+use error::to_user_error;
 
 use crate::models::{CreateTask, Task, UpdateTask};
 
-// ============================ TAURI COMMANDS ============================
-
-// /// List all tasks (newest first)
-// #[tauri::command]
-// async fn list_tasks(pool: tauri::State<'_, PgPool>) -> Result<Vec<Task>, String> {
-//     repo::list(&*pool).await.map_err(to_user_error)
-// }
+#[tauri::command]
+async fn list_tasks(pool: tauri::State<'_, PgPool>) -> Result<Vec<Task>, String> {
+    repository::list(&*pool).await.map_err(to_user_error)
+}
 
 // /// Get a single task
 // #[tauri::command]
@@ -126,10 +126,10 @@ pub fn run() {
           Ok(())
       })
       .invoke_handler(tauri::generate_handler![
-          // list_tasks,
-          // create_task,
-          // update_task,
-          // delete_task
+          list_tasks,
+        //   create_task,
+        //   update_task,
+        //   delete_task
       ])
       .run(tauri::generate_context!())
       .expect("error while running tauri application");

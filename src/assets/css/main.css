@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -6,6 +6,7 @@
   --color-secondary: #2c4561;
   --color-secondary-light: #303f4f;
   --color-secondary-accent: #f3d32c;
+  --color-offwhite: #fdfdfc;
 
   --color-achievement: #de8500;
   --color-challenge: #ea5792;
@@ -13,4 +14,5 @@
   --color-weekly: #3ec846;
 
   --font-sans: "Inter", sans-serif;
+  --font-montserrat: "Montserrat", serif;
 }
