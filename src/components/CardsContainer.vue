@@ -1,12 +1,17 @@
 <template>
-  <div class="w-full flex flex-col items-end justify-between h-full">
+  <div class="w-full flex flex-col items-end h-full">
     <cards-navigator
       :active-item-id="activeNavigatorItemId"
       @update:activeItemId="activeNavigatorItemId = $event"
     />
 
-    <cards-list />
+    <div class="flex flex-col w-full overflow-hidden">
+      <div class="w-full y-2 bg-black/15 h-2"></div>
 
+      <cards-list />
+
+      <div class="w-full y-2 bg-black/15 h-2 rounded-b-lg"></div>
+    </div>
     <cards-footer />
   </div>
 </template>

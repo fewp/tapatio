@@ -5,7 +5,7 @@
     <img
       src="/assets/images/pyroxene.webp"
       alt="Pyroxene Reward"
-      class="absolute skew-x-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain w-12"
+      class="absolute skew-x-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain w-13"
     />
     <span
       class="text-secondary -mb-0.5 z-1 font-montserrat font-bold tracking-tight text-shadow-[0_1px_0_rgb(255_255_255/1)]"

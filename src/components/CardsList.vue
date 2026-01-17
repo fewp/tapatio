@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full flex flex-col items px-6 py-4 bg-black/15 h-full overflow-scroll gap-4"
+    class="w-full flex flex-col items px-6 py-2 bg-black/15 h-full overflow-scroll gap-4"
   >
     <card v-for="(task, index) in tasks" :key="index" :task="task" />
   </div>

@@ -3,7 +3,7 @@
     class="flex justify-between pt-12 p-8 bg-no-repeat bg-cover bg-center bg-[url(/assets/images/bg.png)] w-full h-screen"
   >
     <aside></aside>
-    <main class="w-3/5 flex flex-col">
+    <main class="w-4/7 flex flex-col">
       <cards-container />
     </main>
   </div>

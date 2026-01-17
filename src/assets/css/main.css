@@ -8,6 +8,13 @@
   --color-secondary-accent: #f3d32c;
   --color-offwhite: #fdfdfc;
 
+  --color-disabled-primary: #c2c2c6;
+  --color-disabled-secondary: #dbd9d4;
+  --color-disabled-tertiary: #6f7174;
+
+  --color-emphasis-primary: #f9ee4a;
+  --color-emphasis-tertiary: #481d15;
+
   --color-achievement: #de8500;
   --color-challenge: #ea5792;
   --color-daily: #369cea;

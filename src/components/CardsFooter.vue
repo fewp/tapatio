@@ -1,9 +1,8 @@
 <template>
   <div
-    class="w-full flex items-center justify-between px-6 py-4 h-min pt-8 min-h-24"
+    class="w-full flex items-center justify-between pr-6 gap-6 py-4 h-min pt-4 min-h-24"
   >
-    <div></div>
-    <button>Claim All</button>
+    <daily-tracker-card />
   </div>
 </template>
 
